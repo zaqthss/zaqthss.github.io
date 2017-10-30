@@ -3,8 +3,10 @@ layout: page
 tagline:
 ---
 
+<!--
 {% for post in paginator.posts %}
-
+{% for post in site.posts %}
+{% endfor %}
 <article class="home">
 
   <span class="post-date">
@@ -40,35 +42,128 @@ tagline:
 </article>
 {% endfor %}
 <hr/>
+-->
+<!-- biography -->
+<div class="bio">
+  <header>
+    <h1 margin="0px"><i class="fa fa-user"></i> Biography</h1>
+  </header>
+  <p>
+    Aoqian Zhang is currently a PhD candidate in institute of Information System and Engineering, <a href="http://thss.tsinghua.edu.cn/">School of Software</a>, <a href="http://www.tsinghua.edu.cn/">Tsinghua University</a>, under supervison of Prof. <a href="http://www.thss.tsinghua.edu.cn/publish/soft/3641/2010/20101214090035662150715/20101214090035662150715_.html">Jianmin Wang</a> and Prof. <a href="http://ise.thss.tsinghua.edu.cn/sxsong/index.html">Shaoxu Song</a>.
+    He received his B.E. in 2013 in Computer Software from School of Software, Tsinghua University.
+  </p>
+</div>
 
-<ul class="pager"> 
+<!-- research interest -->
+<div class="research">
+  <header>
+    <h1 margin="0px"><i class="fa fa-star"></i> Research Interests</h1>
+  </header>
+  <p>
+    Data Cleaning, Data Imputation and Temporal Anomaly Detection.
+  </p>
+</div>
 
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
-    {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
-    {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  {% endif %}
-  
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
+<!-- publications -->
+<div class="pub">
+  <header>
+    <h1 margin="0px"><i class="fa fa-file-text"></i> Publications
+    <a target="blank" href="https://scholar.google.com/citations?user=uKmgKfMAAAAJ">[Google Scholar]</a>
+    </h1>
+  </header>
 
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  {% endif %}
+  <!--
+  <header>
+    <h2 margin="0px"><i class="fa fa-file"></i> Journals</h2>
+  </header>
+  -->
+  <ol>
+    <li>
+      <p>
+        [<span class="booktitle">PVLDB</span>]
+        <strong>Aoqian Zhang</strong>, Shaoxu Song*, Jianmin Wang, Philip S. Yu, 
+        "<a target="blank" href="http://www.vldb.org/pvldb/vol10/p1046-song.pdf">Time Series Data Cleaning: From Anomaly Detection to Anomaly Repairing</a>", 
+        PVLDB 10(10): 1046-1057 (2017)
+        [<a href="papers/Time Series Data Cleaning From Anomaly Detection to Anomaly Repairing.pdf">PDF</a>][<a href="https://github.com/zaqthss/vldb17-imr">Code@Github</a>]
+      </p>
+    </li>
+    <li>
+      <p>
+        [<span class="booktitle">PVLDB</span>]
+        Shaoxu Song*, <strong>Aoqian Zhang</strong>, Lei Chen, Jianmin Wang, 
+        "<a target="blank" href="http://www.vldb.org/pvldb/vol8/p1286-song.pdf">Enriching Data Imputation with Extensive Similarity Neighbors</a>", 
+        PVLDB 8(11): 1286-1297 (2015)
+        [<a href="papers/Enriching Data Imputation with Extensive Similarity Neighbors.pdf">PDF</a>]
+      </p>
+    </li>
+  <!--
+  </ol>
+  <header>
+    <h2 margin="0px"><i class="fa fa-file"></i> Conferences</h2>
+  </header>
+  <ol>
+  -->
+    <li>
+      <p>
+        [<span class="booktitle">ACM SIGMOD'16</span>]
+        <strong>Aoqian Zhang</strong>, Shaoxu Song*, Jianmin Wang, 
+        "<a target="blank" href="https://dl.acm.org/citation.cfm?doid=2882903.2915233">Sequential Data Cleaning: A Statistical Approach</a>",
+        ACM SIGMOD Conference, San Francisco, USA, June 26 - July 1, 2016
+        [<a href="papers/Sequential Data Cleaning A Statistical Approach.pdf">PDF</a>][<a href="https://github.com/zaqthss/sigmod16-scr">Code@Github</a>]
+      </p>
+    </li>
+    <li>
+      <p>
+        [<span class="booktitle">ACM SIGMOD'15</span>]
+        Shaoxu Song*, <strong>Aoqian Zhang</strong>, Jianmin Wang, Philip S. Yu
+        "<a target="blank" href="https://dl.acm.org/citation.cfm?doid=2723372.2723730">SCREEN: Stream Data Cleaning under Speed Constraints</a>",
+        ACM SIGMOD Conference, Melbourne, VIC, Australia, May 31 - June 4, 2015
+        [<a href="papers/SCREEN Stream Data Cleaning under Speed Constraints">PDF</a>][<a href="https://github.com/zaqthss/sigmod15-screen">Code@Github</a>]
+      </p>
+    </li>
+  </ol>
+</div>
 
-</ul>
+<!-- honors and awards -->
+<div class="awards">
+  <header>
+    <h1 margin="0px"><i class="fa fa-trophy"></i> Honors and Awards</h1>
+  </header>
+  <ol>
+    <li><p>
+        2017, 2014, First-class Scholarship (Glodon Scholarship), Tsinghua University
+    </p></li>
+    <li><p>
+        2016, Tsinghua Lin Feng Counsellor Prize(<em>highest honor to counsellors of undergraduates</em>)
+    </p></li>
+    <li><p>
+        2015, National Scholarship, Tsinghua University
+    </p></li>
+    <li><p>
+        2015, Excellent Communist Party Member of Master in Tsinghua
+    </p></li>
+    <li><p>
+        2013, Data transfer group champion, Solve for tomorrow, National Youth Science Innovation Experiment Competition
+    </p></li>
+
+    
+</div>
+
+<!-- projects -->
+<div class="projects">
+  <header>
+    <h1 margin="0px"><i class="fa fa-tags"></i> Projects</h1>
+  </header>
+  <ol>
+    <li><p>
+    <Strong>TsQuality</Strong>. 
+    <br>The project aims at profiling, anomaly detecting and data repairing for time series data with large size and provides data quality gaurantee for further data mining. 
+    It is a sub-project in <Strong>National Engineering Laboratory for Big Data Software</Strong><br>
+    </p></li>
+  </ol>
+</div>
+
+
+
+
+

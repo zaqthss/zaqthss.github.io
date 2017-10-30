@@ -189,3 +189,15 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+.booktitle{
+	/* color: #B60000; */
+	color: #428bca;
+	font-weight: bold;
+}
+
+a{
+	outline:none;
+	text-decoration: underline;
+	/* color: #323232; */
+}
+
