@@ -3,3 +3,4 @@ _site/*
 .jekyll-metadata
 *Thumbs.db
 Gemfile.lock
+.DS_Store
