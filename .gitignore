@@ -4,3 +4,9 @@ _site/*
 *Thumbs.db
 Gemfile.lock
 .DS_Store
+
+*.aux
+*.cls
+*.dvi
+*.log
+*.synctex.gz

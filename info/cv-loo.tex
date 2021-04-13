@@ -1,0 +1,177 @@
+\let\nofiles\relax
+\documentclass[margin]{cv}
+%\documentclass[margin,line]{res}
+\usepackage[colorlinks=false, bookmarks=false]{hyperref}
+\usepackage{enumerate}
+\usepackage{etaremune}
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight} 
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\pars
+      kip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+      
+% Header and footer
+\usepackage{lastpage}%获得总页数
+\usepackage{fancyhdr}
+
+\resumewidth=1.1\resumewidth
+\newsectionwidth{0.8\sectionwidth} % decrease the width of left column(section title)
+
+%\renewcommand{\sc}[1]{{\bf\MakeUppercase{#1}}}
+
+\usepackage{txfonts}
+
+
+\begin{document}
+
+%\thispagestyle{empty}
+
+%\addtolength{\headheight}{\baselineskip}
+\lhead{\hspace*{-\sectionwidth} \sc Aoqian Zhang} % make lhead on the most left
+\rhead{\sc Curriculum Vitae}
+\cfoot{\thepage~/ \pageref*{LastPage}}
+%\pagenumbering{arabic} % choose the page number format: arabic/roman/Roman...
+
+%\addtolength{\headwidth}{-\sectionwidth}
+%\addtolength{\headruleskip}{\baselineskip}
+\renewcommand{\headrule}{%
+  \vskip-0.8\baselineskip\hspace*{-\sectionwidth}\vspace*{1.5\baselineskip} \hrulefill%
+  } % make headrule the same width as the textwidth
+\pagestyle{fancy}
+
+%\setlength{\headsep}{2in} % space between header and body text
+
+\vspace*{1.5\baselineskip}
+\name{{{\fontfamily{phv}\selectfont \LARGE Aoqian Zhang}}}
+
+\begin{resume}
+\section{\sc Contact\\ Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3.8in}p{3.2in}}
+Cheriton School of Computer Science & {\it Phone:}  +1 (226)978 3798 \\            
+University of Waterloo   & {\it Email:}  aoqian.zhang@uwaterloo.ca \\
+Waterloo, Ontario, Canada, N2L 3G1 & {\it Web:}  \url{https://zaqthss.github.io}\\       
+
+\end{tabular}
+
+
+\section{\sc Research Interests}
+
+Data Cleaning, Data Imputation, Temporal Anomaly Detection etc.
+
+\section{\sc Education}
+{\bf Tsinghua University}, School of Software  \hfill August 2013 - July 2018 \\
+Ph.D. in Software Engineering \hfill with \textbf{Graduation Award} \\
+Thesis: {\it Research on Time Series Data Cleaning} (Supervisor: Prof. Jianmin Wang)
+%Thesis: \textit{Wireless Indoor Localization via Crowdsensing} (Supervisor: Prof. Jianmin Wang)
+
+{\bf Tsinghua University}, School of Software \hfill August 2009 - July 2013 \\
+B.E. in Computer Software \hfill with \textbf{Graduation Award} \\
+
+%{\em Department of Statistics} 
+%\vspace*{-.1in}
+%\begin{list1}
+%\item[] Ph.D. Candidate, Computer Science, December 2001 (expected
+%  graduation date: May 2003)
+%\begin{list2}
+%\vspace*{.05in}
+%\item Dissertation Topic:  ``Nonstationary Covariance Models for
+%  Spatial Data and Regression Problems'' 
+%%\item Dissertation Topic:  ``Hierarchical Models for Multiple Ratings
+%%  in Performance-Based\\ \hspace*{1.23in} Student Assessments.'' 
+%\item Advisor:  Mark J. Schervish
+%\end{list2}
+%\vspace*{.05in}
+%\item[] M.S., Statistics,  May 2000
+%\end{list1}
+
+\section{\sc Academic Experience}
+{\bf Cheriton School of Computer Science, University of Waterloo}, Waterloo, ON, Canada \\
+Post Doctoral Fellows ({\it Advisor: Prof. Ihab Francis Ilyas}) \hfill September 2018 - Now
+
+\section{\sc Honors \& \\ Awards}
+{\bf Tsinghua Zi Jing Scholar} ({\it for counsellor who do fantastic job in research}) \hfill 2018 \\
+First-class Scholarship (Glodon Scholarship), Tsinghua University \hfill 2014,2017 \\
+{\bf Tsinghua Lin Feng Counsellor Prize} ({\it highest honor to counsellors of undergraduates}) \hfill 2016 \\
+{\bf National Scholarship, Tsinghua University} \hfill 2015 \\
+Excellent Communist Party Member of Master in Tsinghua \hfill 2015 \\
+{\bf Data transfer group champion, Solve for tomorrow, National Youth Science Innovation Experiment Competition} \hfill 2013
+
+%\section{\sc Selected Publications}
+\section{\sc Publications}
+
+%{\large\bf Journal Papers}
+
+% \begin{enumerate}[{[}J1{]}]
+\begin{enumerate}[{[}1{]}]
+\item {\bf Aoqian Zhang}, {Shaoxu Song}, {Yu Sun}, {Jianmin Wang}, ``Learning Individual Models for Imputation", 35th {IEEE} International Conference on Data Engineering({\bf ICDE}), Macao, China, April 8-11, 2019, pp. 160-171. 
+
+\item {Shaoxu Song}, {Yu Sun}, {\bf Aoqian Zhang}, {Lei Chen, L}, {Jianmin Wang}  ``Enriching Data Imputation under Similarity Rule Constraints''. IEEE Transactions on Knowledge and Data Engineering({\bf TKDE}) (to appear).
+
+\item {\bf Aoqian Zhang}, {Shaoxu Song}, {Jianmin Wang}, {Philip S. Yu}, ``Time Series Data Cleaning: From Anomaly Detection to Anomaly Repairing'', Proceedings of VLDB({\bf PVLDB}), vol. 10, no. 10, pp. 1046-1057, June 2017.
+
+\item {\bf Aoqian Zhang}, Shaoxu Song, Jianmin Wang, ``Sequential Data Cleaning: A Statistical Approach'', ACM SIGMOD Conference ({\bf ACM SIGMOD}), San Francisco, USA, June 26 - July 1, 2016, pp. 909-924.
+
+\item {Shaoxu Song}, {\bf Aoqian Zhang}, {Lei Chen}, {Jianmin Wang}, ``Enriching Data Imputation with Extensive Similarity Neighbors'', Proceedings of VLDB({\bf PVLDB}), vol. 8, no. 11, pp. 1286-1297, July 2015.
+
+% \end{enumerate}
+
+% {\large\bf Conference Papers}
+
+% \begin{enumerate}[{[}C1{]}]
+
+\item Shaoxu Song, {\bf Aoqian Zhang}, Jianmin Wang, Philip S. Yu, ``SCREEN: Stream Data Cleaning under Speed Constraints'', ACM SIGMOD Conference ({\bf ACM SIGMOD}), Melbourne, VIC, Australia, May 31 - June 4, 2015, pp. 827-841.
+
+\end{enumerate}
+
+\section{\sc Patents}
+{\bf Issued Chinese Patents}(2 patents in pending)
+\begin{enumerate}[{[}P1{]}]
+\item Jianmin Wang, Shaoxu Song, {\bf Aoqian Zhang}, Correction method for global positioning system data based on speed constraint, ZL201711405160.4, issued
+
+\end{enumerate}
+
+\section{\sc Projects}
+{\bf TsQaulity}. A project develops data quality tools for large scale time series data, including data profiling, anomaly detection and data repairing. It is one of the projects in the {\bf National Engineering Laboratory for Big Data Software(NEL-BDS)}.
+
+\section{\sc Internship}
+Research Intern, Data Engineering Group in K2data, Beijing, China (October 2017 - February 2018)
+
+\section{\sc Professional Services}
+\textbf{Reviewer} for ACM Journal of Data and Information Quality
+
+\section{\sc Mentorship}
+I am fortunate to work with a great group of graduate and undergraduate students during my PhD time at Tsinghua University:
+
+{\bf Undergraduate Mentorship}
+
+\leftmargini=4mm
+\begin{itemize}
+\item[-] 2016.07-2017.05: {\bf Director of the Student Affairs Office in School of Software, Tsinghua University}
+\item[-] 2015.01-2016.07: {\bf Vice Director of the Student Affairs Office in School of Software, Tsinghua University}
+\item[-] 2012.08-2015.07: {\bf Counsellor of over 60 undergraduates of class 2012 in School of Software, Tsinghua University (won over 5 Excellent Collective Awards and the Lin Feng Counsellor Award}
+\end{itemize}
+
+\end{resume}
+\end{document}
+
+
+
